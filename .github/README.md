@@ -1,7 +1,7 @@
 <p align="center">
     <br><b>🌺𝗔𝗱𝗿𝗶𝘀𝗵 𝗠𝘂𝘀𝗶𝗰 𝗕𝗼𝘁🌺</b><br>
 </p>
-<p align="center"><a href="https://t.me/DevilsHeavenMF"><img src"https://te.legra.ph/file/c7caab9cd8c683d0901fa.jpg"></a></p>
+<p align="center"><a href="https://t.me/Adrish_Support"><img src"https://te.legra.ph/file/c7caab9cd8c683d0901fa.jpg"></a></p>
 
 Adrish Music is a Telegram Bot project that allows you to play music on Telegram through Telegram Voice Chat Feature</b><br>
 
