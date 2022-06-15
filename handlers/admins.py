@@ -19,7 +19,7 @@ ACTV_CALLS = []
 async def pause(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("» ᴛʀᴀᴄᴋ ᴘᴀᴜsᴇᴅ ʙʏ {} ʙᴀʙʏ😫".format( message.from_user.mention ), )
+    await message.reply_text("» 𝐓𝐫𝐚𝐜𝐤 𝐩𝐚𝐮𝐬𝐞𝐝 𝐛𝐲 {} 𝐁𝐚𝐛𝐲😫".format( message.from_user.mention ), )
 
 
 @Client.on_message(command(["resume"]) & other_filters)
@@ -28,7 +28,7 @@ async def pause(_, message: Message):
 async def resume(_, message: Message):
     await message.delete()
     await callsmusic.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("» ᴛʀᴀᴄᴋ ʀᴇsᴜᴍᴇᴅ ʙʏ {} ʙᴀʙʏ🤗".format( message.from_user.mention ), )
+    await message.reply_text("» 𝐓𝐫𝐚𝐜𝐤 𝐫𝐞𝐬𝐮𝐦𝐞𝐝 𝐛𝐲 {} 𝐁𝐚𝐛𝐲🤗".format( message.from_user.mention ), )
 
 
 @Client.on_message(command(["end", " stop"]) & other_filters)
@@ -42,7 +42,7 @@ async def stop(_, message: Message):
 
     await message.delete()
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("» sᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ ʙʏ {} ʙᴀʙʏ🥺".format(
+    await message.reply_text("» 𝐒𝐭𝐫𝐞𝐚𝐦 𝐞𝐧𝐝 𝐛𝐲 {} 𝐁𝐚𝐛𝐲🥺".format(
       message.from_user.mention ), )
 
 @Client.on_message(command(["skip", "next"]) & other_filters)
@@ -55,7 +55,7 @@ async def skip(_, message: Message):
     for x in callsmusic.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("» ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ ᴡʜᴀᴛ ᴛᴏ sᴋɪᴘ ʙᴀʙʏ🥲")
+        await message.reply_text("» 𝐊𝐮𝐜𝐡𝐡 𝐩𝐥𝐚𝐲 𝐡𝐨 𝐡𝐢 𝐧𝐡𝐢 𝐫𝐚𝐡𝐚 𝐤𝐲𝐚 𝐬𝐤𝐢𝐩 𝐤𝐚𝐫 𝐫𝐡𝐞 𝐡𝐨 𝐛𝐚𝐛𝐲🥲")
     else:
         queues.task_done(chat_id)
         
@@ -70,4 +70,4 @@ async def skip(_, message: Message):
                     ),
                 ),
             )
-    await message.reply_text("» ᴛʀᴀᴄᴋ sᴋɪᴘᴘᴇᴅ ʙʏ {} ʙᴀʙʏ🤔".format( message.from_user.mention ), )
+    await message.reply_text("» 𝐓𝐫𝐚𝐜𝐤 𝐬𝐤𝐢𝐩𝐩𝐞𝐝 𝐛𝐲 {} 𝐁𝐚𝐛𝐲🤔".format( message.from_user.mention ), )
