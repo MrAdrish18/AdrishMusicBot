@@ -3,7 +3,7 @@
 </p>
 <p align="center"><a href="https://t.me/DevilsHeavenMF"><img src"https://te.legra.ph/file/c7caab9cd8c683d0901fa.jpg"></a></p>
 
-Fallen Music is a Telegram Bot project that allows you to play music on Telegram through Telegram Voice Chat Feature</b><br>
+Adrish Music is a Telegram Bot project that allows you to play music on Telegram through Telegram Voice Chat Feature</b><br>
 
 
 <details>
@@ -64,8 +64,8 @@ pip3 install -U pip
 curl -sL https://deb.nodesource.com/setup_16.x | bash -
 sudo apt-get install -y nodejs
 npm i -g npm
-git clone https://github.com/AnonymousR1025/FallenMusic # Clone your repo.
-cd FallenMusic
+git clone https://github.com/MrAdrish18/AdrishMusicBot # Clone your repo.
+cd AdrishMusicBot
 pip3 install -U -r requirements.txt
 cp example.env .env #Use vim to edit ENVs
 vim .env #Fill up your ENVs ( Steps press i to enter in insert mode then edit the file. Press Esc to exit the editing mode then type :wq! and press Enter key to save the file.)
