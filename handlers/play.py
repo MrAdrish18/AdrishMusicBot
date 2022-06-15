@@ -94,7 +94,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except Exception as e:
         await fallen.edit(
-            f"<i>» 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐣𝐨𝐢𝐧 𝐧𝐡𝐢 𝐡𝐨 𝐩𝐚 𝐫𝐚𝐡𝐚 𝐚𝐚𝐡𝐚 𝐩𝐞 𝐛𝐚𝐛𝐲😭.</i>\n\nʀᴇᴀsᴏɴ : {e}")
+            f"<i>» 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐣𝐨𝐢𝐧 𝐧𝐡𝐢 𝐡𝐨 𝐩𝐚 𝐫𝐚𝐡𝐚 𝐚𝐚𝐡𝐚 𝐩𝐞 𝐛𝐚𝐛𝐲😭𝐀𝐝𝐝 𝐦𝐚𝐧𝐮𝐚𝐥𝐥𝐲 𝐛𝐚𝐛𝐲 @AdrishAssistant.</i>\n\nʀᴇᴀsᴏɴ : {e}")
         return
     
     audio = (
