@@ -23,7 +23,7 @@ async def join_chat(c: Client, m: Message):
             (await user.get_me()).id,
             can_manage_voice_chats=True
         )
-        return await user.send_message(chat_id, "🙂ᴀssɪsᴛᴀɴᴛ sᴜᴄᴄᴇssꜰᴜʟʟʏ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ ʙᴀʙʏ.​")
+        return await user.send_message(chat_id, "🙂𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐚𝐚𝐡𝐚 𝐣𝐨𝐢𝐧 𝐡𝐨 𝐠𝐲𝐚 𝐛𝐚𝐛𝐲.​")
     except UserAlreadyParticipant:
         admin = await m.chat.get_member((await user.get_me()).id)
         if not admin.can_manage_voice_chats:
@@ -31,5 +31,5 @@ async def join_chat(c: Client, m: Message):
                 (await user.get_me()).id,
                 can_manage_voice_chats=True
             )
-            return await user.send_message(chat_id, "🙂ᴀssɪsᴛᴀɴᴛ ᴀʟʀᴇᴀᴅʏ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ ʙᴀʙʏ.​")
-        return await user.send_message(chat_id, "🙂ᴀssɪsᴛᴀɴᴛ ᴀʟʀᴇᴀᴅʏ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ ʙᴀʙʏ.​")
+            return await user.send_message(chat_id, "🙂𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐚𝐥𝐫𝐞𝐚𝐝𝐲 𝐚𝐚𝐡𝐚 𝐣𝐨𝐢𝐧 𝐡𝐚𝐢 𝐛𝐚𝐛𝐲.​")
+        return await user.send_message(chat_id, "🙂𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐚𝐥𝐫𝐞𝐚𝐝𝐲 𝐚𝐚𝐡𝐚 𝐣𝐨𝐢𝐧 𝐡𝐚𝐢 𝐛𝐚𝐛𝐲.​")
