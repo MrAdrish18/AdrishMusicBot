@@ -55,7 +55,7 @@ async def play(_, message: Message):
 
     await message.delete()
 
-    fallen = await message.reply("» ᴘʀᴏᴄᴇssɪɴɢ​... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ʙᴀʙʏ🔎")
+    fallen = await message.reply("» 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠....... 𝐑𝐮𝐤𝐨 𝐣𝐚𝐫𝐚 𝐬𝐚𝐛𝐚𝐫 𝐤𝐚𝐫𝐨 𝐛𝐚𝐛𝐲🔎")
 
     chumtiya = message.from_user.mention
 
@@ -77,24 +77,24 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await fallen.edit(
-                        "<b>» ꜰɪʀsᴛʟʏ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ʙᴀʙʏ</b>")
+                        "<b>» 𝐏𝐚𝐡𝐥𝐞 𝐦𝐮𝐣𝐡𝐞 𝐚𝐝𝐦𝐢𝐧 𝐛𝐚𝐧𝐚𝐢 𝐛𝐚𝐛𝐲🥺</b>")
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "» ᴀssɪsᴛᴀɴᴛ sᴜᴄᴄᴇssꜰᴜʟʏ ᴊᴏɪɴᴇᴅ ᴛʜᴇ ᴄʜᴀᴛ ʙᴀʙʏ, ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ sᴏɴɢs​.")
+                        message.chat.id, "» 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐬𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐚𝐚𝐡𝐚 𝐣𝐨𝐢𝐧 𝐡𝐨 𝐠𝐲𝐚 𝐁𝐚𝐛𝐲, 𝐀𝐛 𝐬𝐨𝐧𝐠 𝐩𝐥𝐚𝐲 𝐤𝐚𝐫 𝐬𝐚𝐤𝐭𝐞 𝐡𝐨​.")
 
                 except UserAlreadyParticipant:
                     pass
                 except Exception:
                     await fallen.edit(
-                        f"<b>» ᴀssɪsᴛᴀɴᴛ ɪs ɴᴏᴛ ɪɴ ᴛʜɪs ᴄʜᴀᴛ ʙᴀʙʏ, sᴇɴᴅ /join ғɪʀsᴛ ᴛɪᴍᴇ ᴛᴏ ᴏʀᴅᴇʀ ᴛʜᴇ ᴀssɪsᴛᴀɴᴛ ᴛᴏ ᴊ​ᴏɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.")
+                        f"<b>» 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐚𝐚𝐡𝐚 𝐧𝐡𝐢 𝐡𝐚𝐢 𝐛𝐚𝐛𝐲, 𝐒𝐞𝐧𝐝 /join 𝐏𝐚𝐡𝐥𝐞 𝐫𝐞𝐪𝐮𝐞𝐬𝐭 𝐤𝐚𝐫𝐨 𝐚𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐚𝐚𝐡𝐚 𝐣𝐨𝐢𝐧 𝐤𝐚𝐫𝐞.")
     try:
         await USER.get_chat(chid)
     except Exception as e:
         await fallen.edit(
-            f"<i>» ᴀssɪsᴛᴀɴᴛ ғᴀɪʟᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴛʜɪs ᴄʜᴀᴛ.</i>\n\nʀᴇᴀsᴏɴ : {e}")
+            f"<i>» 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐣𝐨𝐢𝐧 𝐧𝐡𝐢 𝐡𝐨 𝐩𝐚 𝐫𝐚𝐡𝐚 𝐚𝐚𝐡𝐚 𝐩𝐞 𝐛𝐚𝐛𝐲.</i>\n\nʀᴇᴀsᴏɴ : {e}")
         return
     
     audio = (
@@ -107,7 +107,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
+                f"» 𝐒𝐨𝐫𝐫𝐲 𝐛𝐚𝐛𝐲 🥺, 𝐭𝐫𝐚𝐜𝐤 𝐥𝐨𝐧𝐠𝐞𝐫 𝐭𝐡𝐚𝐧  {DURATION_LIMIT} 𝐈𝐭𝐧𝐚 𝐦𝐢𝐧𝐮𝐭𝐞𝐬 𝐚𝐥𝐥𝐨𝐰 𝐧𝐡𝐢 𝐡𝐚𝐢"
             )
 
         file_name = get_file_name(audio)
@@ -148,14 +148,14 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await fallen.edit(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
+                f"» 𝐒𝐨𝐫𝐫𝐲 𝐛𝐚𝐛𝐲 🥺, 𝐭𝐫𝐚𝐜𝐤 𝐥𝐨𝐧𝐠𝐞𝐫 𝐭𝐡𝐚𝐧  {DURATION_LIMIT} 𝐈𝐭𝐧𝐚 𝐦𝐢𝐧𝐮𝐭𝐞𝐬 𝐚𝐥𝐥𝐨𝐰 𝐧𝐡𝐢 𝐡𝐚𝐢"
             )
             return
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
             return await fallen.edit(
-                "» ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ sᴇᴀʀᴄʜ ʙᴀʙʏ🤦🏻‍♂️"
+                "» 𝐊𝐨𝐢 𝐬𝐨𝐧𝐠 𝐧𝐚𝐦𝐞 𝐭𝐨 𝐝𝐨 𝐬𝐞𝐚𝐫𝐜𝐡 𝐤𝐚𝐫𝐧𝐞 𝐤𝐞 𝐥𝐢𝐲𝐞🤦🏻‍♂️"
             )
         await fallen.edit("🔎")
         query = message.text.split(None, 1)[1]
@@ -182,14 +182,14 @@ async def play(_, message: Message):
 
         except Exception as e:
             await fallen.edit(
-                "» ɴᴏᴛ ғᴏᴜɴᴅ, ᴛʀʏ sᴇᴀʀᴄʜɪɴɢ ᴡɪᴛʜ ᴛʜᴇ sᴏɴɢ ɴᴀᴍᴇ ʙᴀʙʏ"
+                "» 𝐍𝐚𝐡𝐢 𝐦𝐢𝐥𝐚🥺,  𝐬𝐨𝐧𝐠 𝐧𝐚𝐦𝐞 𝐤𝐞 𝐬𝐚𝐭𝐡 𝐬𝐞𝐚𝐫𝐜𝐡 𝐤𝐚𝐫𝐨"
             )
             print(str(e))
             return
 
         if (dur / 60) > DURATION_LIMIT:
             await fallen.edit(
-                f"» sᴏʀʀʏ ʙᴀʙʏ, ᴛʀᴀᴄᴋ ʟᴏɴɢᴇʀ ᴛʜᴀɴ  {DURATION_LIMIT} ᴍɪɴᴜᴛᴇs ᴀʀᴇ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ᴛᴏ ᴘʟᴀʏ"
+                f"» 𝐒𝐨𝐫𝐫𝐲 𝐛𝐚𝐛𝐲 🥺, 𝐭𝐫𝐚𝐜𝐤 𝐥𝐨𝐧𝐠𝐞𝐫 𝐭𝐡𝐚𝐧  {DURATION_LIMIT} 𝐈𝐭𝐧𝐚 𝐦𝐢𝐧𝐮𝐭𝐞𝐬 𝐚𝐥𝐥𝐨𝐰 𝐧𝐡𝐢 𝐡𝐚𝐢"
             )
             return
         file_path = await converter.convert(youtube.download(url))
@@ -200,12 +200,12 @@ async def play(_, message: Message):
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
         await message.reply_text(
-            text=f"**» ᴛʀᴀᴄᴋ ǫᴜᴇᴜᴇᴅ ᴀᴛ {position} ʙᴀʙʏ**\n📌 **ᴛɪᴛʟᴇ​ :**[{title[:65]}]({url})\n\n🕕** ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}` **ᴍɪɴᴜᴛᴇs**\n💕** ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ​ : **{chumtiya}",
+            text=f"**» 𝐓𝐫𝐚𝐜𝐤 𝐪𝐮𝐞𝐮𝐞𝐝 𝐚𝐭 {position} 𝐁𝐚𝐛𝐲**\n📌 **𝐓𝐢𝐭𝐥𝐞​ :**[{title[:65]}]({url})\n\n🕕** 𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧 :** `{duration}` **𝐦𝐢𝐧𝐮𝐭𝐞𝐬**\n💕** 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲​ : **{chumtiya}",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• sᴜᴩᴩᴏʀᴛ •", url=f"https://t.me/{SUPPORT_GROUP}"),
-                    InlineKeyboardButton("» ᴄʟᴏsᴇ «", callback_data="close_play")
+                    InlineKeyboardButton("• 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 •", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("» 𝗖𝗹𝗼𝘀𝗲 «", callback_data="close_play")
                 ],
             ]
         ),
@@ -223,12 +223,12 @@ async def play(_, message: Message):
             )
 
         await message.reply_text(
-            text=f"**ㅤㅤㅤ» ɴᴏᴡ ᴘʟᴀʏɪɴɢ «**\n📌 **ᴛɪᴛʟᴇ​:** [{title[:65]}]({url})\n🕕 **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}` ᴍɪɴᴜᴛᴇs\n💕 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ​:** {chumtiya}\n💔 **ᴘʟᴀʏɪɴɢ ɪɴ​:** `{message.chat.title}`\n🎥 **sᴛʀᴇᴀᴍ ᴛʏᴘᴇ:** ʏᴏᴜᴛᴜʙᴇ ᴍᴜsɪᴄ\n",
+            text=f"**ㅤㅤㅤ» 𝐍𝐨𝐰 𝐩𝐥𝐚𝐲𝐢𝐧𝐠 𝐛𝐚𝐛𝐲 «**\n📌 **𝐓𝐢𝐭𝐥𝐞​:** [{title[:65]}]({url})\n🕕 **𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧:** `{duration}` ᴍɪɴᴜᴛᴇs\n💕 **​𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐛𝐲:** {chumtiya}\n💔 **𝐏𝐥𝐚𝐲𝐢𝐧𝐠 𝐢𝐧 ​:** `{message.chat.title}`\n🎥 **𝐒𝐭𝐫𝐞𝐚𝐦 𝐭𝐲𝐩𝐞:** ʏᴏᴜᴛᴜʙᴇ ᴍᴜsɪᴄ\n",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("• sᴜᴩᴩᴏʀᴛ •", url=f"https://t.me/{SUPPORT_GROUP}"),
-                    InlineKeyboardButton("» ᴄʟᴏsᴇ «", callback_data="close_play")
+                    InlineKeyboardButton("• 𝗦𝘂𝗽𝗽𝗼𝗿𝘁 •", url=f"https://t.me/{SUPPORT_GROUP}"),
+                    InlineKeyboardButton("» 𝗖𝗹𝗼𝘀𝗲 «", callback_data="close_play")
                 ],
             ]
         ),
