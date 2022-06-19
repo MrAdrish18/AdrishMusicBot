@@ -1,9 +1,9 @@
 {
-  "name": "ғᴀʟʟᴇɴ ᴍᴜsɪᴄ",
-  "logo": "https://telegra.ph/file/89cbc8b8760b6abff430f.jpg",
+  "name": "Adrish Music",
+  "logo": "https://te.legra.ph/file/b75b3c1a191f4107b7e50.jpg",
   "description": "A SuperFast VC Player bot to play songs in Telegram Video Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram", "fallen"],
-  "repository": "https://github.com/AnonymousR1025/FallenMusic",
+  "repository": "https://github.com/mradrish18/Adrishmusicbot",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
