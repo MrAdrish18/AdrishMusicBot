@@ -18,13 +18,13 @@ from strings import get_command
 from handlers import app
 from handlers.misc import SUDOERS
 from han.utils import get_readable_time
-from KillerXMusic.utils.database import (add_banned_user,
+from handlers.utils.database import (add_banned_user,
                                        get_banned_count,
                                        get_banned_users,
                                        get_served_chats,
                                        is_banned_user,
                                        remove_banned_user)
-from KillerXMusic.utils.decorators.language import language
+from handlers.utils.decorators.language import language
 
 # Command
 GBAN_COMMAND = get_command("GBAN_COMMAND")
