@@ -9,7 +9,7 @@
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from handlers import command
+from handlers import app
 
 
 def back_stats_markup(_):
