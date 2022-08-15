@@ -15,7 +15,7 @@ async def broadcast(_, message: Message):
     if message.from_user.id not in SUDO_USERS:
         return
     else:
-        wtf = await message.reply("`𝐀𝐝𝐫𝐢𝐬𝐡 𝐬𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐛𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭 𝐛𝐚𝐛𝐲...`")
+        wtf = await message.reply("`𝐇𝐚𝐫𝐥𝐞𝐲 𝐬𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐛𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭 𝐛𝐚𝐛𝐲...`")
         if not message.reply_to_message:
             await wtf.edit("**__𝐦𝐚𝐬𝐬𝐚𝐠𝐞 𝐩𝐞 𝐫𝐞𝐩𝐥𝐲 𝐤𝐚𝐫𝐨 𝐛𝐚𝐛𝐲 𝐛𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭 𝐤𝐚𝐫𝐧𝐞 𝐤𝐞 𝐥𝐢𝐲𝐞__**")
             return
